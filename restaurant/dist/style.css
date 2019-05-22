@@ -1,0 +1,29 @@
+#tab{
+
+}
+
+#tab-options{
+	display: inline-block;
+}
+
+
+ button{
+	background: grey;
+	border: 0;
+	padding: 10px;
+	cursor: pointer;
+	margin-bottom: 0;
+	color: white;
+}
+
+ .pressed {
+	background: #321e1e;	
+}
+
+#tab-content {
+	background: #321e1e;
+	color: white;
+	padding:50px;
+	max-width: 700px;
+
+}

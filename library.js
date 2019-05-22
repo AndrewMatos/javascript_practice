@@ -1,6 +1,35 @@
+
+
 let myLibrary = []
 
 let table= document.querySelector(".table-body");
+
+class Book{
+
+	constructor(name, author, pages, status){
+	this.name = name
+	this.author = author
+	this.pages = pages
+	this.status = status
+	this.info= function() {return `${name} by ${author}, ${pages} pages, ${status}`}
+	}
+
+	addBookToLibrary(){
+		myLibrary.push(this);
+	}
+
+	status_change(){
+		if(this.status == "readed"){
+		this.status = "not readed";
+		}
+		else if (this.status == "not readed"){
+		this.status = "readed";
+		}
+	}
+
+}
+
+/* refactory for ES6 classes 
 
 function Book(name, author, pages, status){
 	this.name = name
@@ -24,6 +53,8 @@ Book.prototype.status_change =function (){
 		this.status = "readed";
 	}
 }
+
+*/
 
 function delete_book(id){
 	
